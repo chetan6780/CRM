@@ -14,3 +14,9 @@
 
 -   `python manage.py startapp leads`
 -   added 'leads' in INSTALLED_APPS in settings.py
+
+### Initial Model
+
+-   Created User, Lead and Agent model
+-   One to one is like foreign key but it has only one to one relationship
+-   models.CASCADE : deletes the related object when the object is deleted
