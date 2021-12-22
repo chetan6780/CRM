@@ -31,3 +31,9 @@
 -   Created homepage views, urls.
 -   **If we create Templates folder inside the app, by default it will be recognized by django**
 -   **If we create templates folder inside BASE DIR we have to add it in DIRs in settings.py**
+
+### Leads and Lead detail page
+
+-   Created leads page
+-   created lead detail page
+-   connected both the pages ti each other
