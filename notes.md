@@ -25,3 +25,8 @@
 
 -   Created **str** method in models
 -   Registered User, Lead and Agent model in admin
+
+### Views, Urls and Template
+
+-   Created homepage views, urls.
+-   **If we create Templates folder inside the app, by default it will be recognized by django**
