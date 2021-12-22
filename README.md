@@ -1,0 +1,3 @@
+# CRM
+
+Django CRM application
