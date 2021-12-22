@@ -1,0 +1,10 @@
+-   Created virtualenv with `virtualenv env`
+-   Activated virtualenv with `.\env\Scripts\activate`
+-   installed django 3.2.6
+-   created `requirements.txt` with `pip freeze > requirements.txt`
+-   Created djcrm `django-admin startproject djcrm .`
+-   added python-gitignore from github
+-   migration - `python manage.py migrate`
+-   Hidden: secret_key in .env
+-   `pip install python-decouple` for [django secret_key hiding](https://stackoverflow.com/questions/64208678/hiding-secret-key-in-django-project-on-github-after-uploading-project)
+-
