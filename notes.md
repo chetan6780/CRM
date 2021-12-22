@@ -1,3 +1,5 @@
+### Initial setup
+
 -   Created virtualenv with `virtualenv env`
 -   Activated virtualenv with `.\env\Scripts\activate`
 -   installed django 3.2.6
@@ -7,4 +9,8 @@
 -   migration - `python manage.py migrate`
 -   Hidden: secret_key in .env
 -   `pip install python-decouple` for [django secret_key hiding](https://stackoverflow.com/questions/64208678/hiding-secret-key-in-django-project-on-github-after-uploading-project)
--
+
+### Adding App
+
+-   `python manage.py startapp leads`
+-   added 'leads' in INSTALLED_APPS in settings.py
