@@ -20,3 +20,8 @@
 -   Created User, Lead and Agent model
 -   One to one is like foreign key but it has only one to one relationship
 -   models.CASCADE : deletes the related object when the object is deleted
+
+### Register in admin
+
+-   Created **str** method in models
+-   Registered User, Lead and Agent model in admin
