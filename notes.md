@@ -43,3 +43,7 @@
 -   Created form in `forms.py`
 -   imported it in views and handled post request
 -   Shortened the code by using `LeadModelForm()`
+
+### Lead Update & delete view
+
+-   Created Update and Delete view in `views.py`

@@ -23,7 +23,11 @@
     <a href="/leads">Go back to leads</a>
     <hr>
     <h1>This is detail of {{ lead.first_name }}</h1>
-    his age is {{ lead.age }}
+    <p>The persons age is {{ lead.age }}</p>
+    <p>The agent responsible for the lead is {{ lead.agent }}</p>
+    <hr>
+    <a href="/leads/{{ lead.pk }}/update">Update</a>
+    <a href="/leads/{{ lead.pk }}/delete">Delete</a>
 </body>
 
 </html>
