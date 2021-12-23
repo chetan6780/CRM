@@ -61,3 +61,4 @@
 -   Added Tailwind CSS
 -   Added & Extended Class base generic views to shorten the `views.py`
 -   Staticfiles configured
+-   Send mails using django main module

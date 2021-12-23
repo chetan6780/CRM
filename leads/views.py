@@ -1,3 +1,4 @@
+from django.core.mail import send_mail
 from django.shortcuts import render, redirect, reverse
 from django.http import HttpResponse
 from django.views import generic
@@ -29,6 +30,17 @@ class LeadCreateView(generic.CreateView):
 
     def get_success_url(self):
         return reverse('leads:lead-list')
+
+    def form_valid(self, form):
+        # TODO: Send email
+        send_mail(
+            subject='A new lead has been created',
+            message='Do to site to see the new lead',
+            from_email="test@test.com",
+            recipient_list=["test2@test.com"]
+        )
+        # then continue what you were doing
+        return super(LeadCreateView, self).form_valid(form)
 
 
 class LeadUpdateView(generic.UpdateView):

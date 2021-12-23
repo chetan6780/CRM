@@ -131,3 +131,6 @@ STATIC_ROOT = BASE_DIR / "static_root"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'leads.User' # use/make User of leads app as auth user model
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# By default backends is smtp instead of console, but it needs authentication from email providers like mailgun, etc
