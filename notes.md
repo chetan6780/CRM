@@ -47,3 +47,10 @@
 ### Lead Update & delete view
 
 -   Created Update and Delete view in `views.py`
+
+### URL Names
+
+-   The problem with urls without name is , when we change a url , others urls become invalid.
+-   URL names helps in creating dynamic links.
+-   the syntax is like this: `{% url 'app_url_name:url_name' %}`
+-   Applied this syntax to all templates
