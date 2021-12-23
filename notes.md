@@ -54,3 +54,5 @@
 -   URL names helps in creating dynamic links.
 -   the syntax is like this: `{% url 'app_url_name:url_name' %}`
 -   Applied this syntax to all templates
+
+- Extended Base.html 
