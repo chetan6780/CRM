@@ -37,3 +37,8 @@
 -   Created leads page
 -   created lead detail page
 -   connected both the pages ti each other
+
+### Form to create leads
+
+-   Created form in `forms.py`
+-   imported it in views and handled post request
