@@ -68,3 +68,8 @@
 -   Used django inbuilt login and logout Views
 -   Customized user creation model
 -   Create test folder inside the app and done the testing, we dont need to configure test folder path, its recognized by default
+
+### Auth permission (login required/LoginRequiredMixin)
+
+-   Used LoginRequiredMixin to authenticate user
+-   used post_save signal to save the userProfile

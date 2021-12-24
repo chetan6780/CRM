@@ -136,3 +136,4 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # By default backends is smtp instead of console, but it needs authentication from email providers like mailgun, etc
 
 LOGIN_REDIRECT_URL = '/leads'
+LOGIN_URL = '/login'
