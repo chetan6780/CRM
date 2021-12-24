@@ -63,7 +63,8 @@
 -   Staticfiles configured
 -   Send mails using django main module
 
-### Authentication
+### Authentication & tests
 
 -   Used django inbuilt login and logout Views
 -   Customized user creation model
+-   Create test folder inside the app and done the testing, we dont need to configure test folder path, its recognized by default
