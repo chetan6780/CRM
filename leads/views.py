@@ -24,14 +24,32 @@ class LandingPageView(generic.TemplateView):
 
 class LeadListView(LoginRequiredMixin, generic.ListView):
     template_name = 'leads/lead_list.html'
-    queryset = Lead.objects.all()
     context_object_name = 'leads'
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_organizer:
+            queryset = Lead.objects.filter(organization=user.userprofile)
+        else:
+            queryset = Lead.objects.filter(
+                organization=user.agent.organization)
+            queryset = queryset.filter(agent__user=user)
+        return queryset
 
 
 class LeadDetailView(OrganizerAndLoginRequiredMixin, generic.DetailView):
     template_name = 'leads/lead_detail.html'
-    queryset = Lead.objects.all()
     context_object_name = 'lead'
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_organizer:
+            queryset = Lead.objects.filter(organization=user.userprofile)
+        else:
+            queryset = Lead.objects.filter(
+                organization=user.agent.organization)
+            queryset = queryset.filter(agent__user=user)
+        return queryset
 
 
 class LeadCreateView(OrganizerAndLoginRequiredMixin, generic.CreateView):
@@ -56,7 +74,10 @@ class LeadCreateView(OrganizerAndLoginRequiredMixin, generic.CreateView):
 class LeadUpdateView(OrganizerAndLoginRequiredMixin, generic.UpdateView):
     template_name = 'leads/lead_update.html'
     form_class = LeadModelForm
-    queryset = Lead.objects.all()
+
+    def get_queryset(self):
+        user = self.request.user
+        return Lead.objects.filter(organization=user.userprofile)
 
     def get_success_url(self):
         return reverse('leads:lead-list')
@@ -64,7 +85,10 @@ class LeadUpdateView(OrganizerAndLoginRequiredMixin, generic.UpdateView):
 
 class LeadDeleteView(LoginRequiredMixin, generic.DeleteView):
     template_name = 'leads/lead_delete.html'
-    queryset = Lead.objects.all()
+
+    def get_queryset(self):
+        user = self.request.user
+        return Lead.objects.filter(organization=user.userprofile)
 
     def get_success_url(self):
         return reverse('leads:lead-list')
