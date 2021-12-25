@@ -73,3 +73,7 @@
 
 -   Used LoginRequiredMixin to authenticate user
 -   used post_save signal to save the userProfile
+
+### Agent CRUD operations
+
+-   Agent create operation done.
