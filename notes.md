@@ -80,3 +80,4 @@
 -   Agent create operation done.
 -   Agent update operation done.
 -   Agent delete operation done.
+-   Custom Agent mixin applied
