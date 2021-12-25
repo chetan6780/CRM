@@ -76,4 +76,7 @@
 
 ### Agent CRUD operations
 
+-   Agent detail operation done.
 -   Agent create operation done.
+-   Agent update operation done.
+-   Agent delete operation done.
