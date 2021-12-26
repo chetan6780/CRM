@@ -86,3 +86,13 @@
 
 -   filtered lead-queryset
 -   invite agent to lead
+
+### Reset password
+
+-   Django built in reset password applied
+-   created password reset form
+-   created password reset email
+-   created password reset confirm
+-   created password reset done
+-   created password reset complete
+-   html files.
