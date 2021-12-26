@@ -96,3 +96,7 @@
 -   created password reset done
 -   created password reset complete
 -   html files.
+
+### Unassigned leads
+
+-   Unassigned lead created
