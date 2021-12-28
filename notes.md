@@ -105,3 +105,4 @@
 ### Category Model created
 
 -   Created category model for New, Contacted, Converted, Unconverted
+-   Category Detail View done
