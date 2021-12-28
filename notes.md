@@ -97,6 +97,7 @@
 -   created password reset complete
 -   html files.
 
-### Unassigned leads
+### Unassigned leads && Assign agents
 
 -   Unassigned lead created
+-   Assign agents to leads
