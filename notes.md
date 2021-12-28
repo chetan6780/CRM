@@ -101,3 +101,7 @@
 
 -   Unassigned lead created
 -   Assign agents to leads
+
+### Category Model created
+
+-   Created category model for New, Contacted, Converted, Unconverted
